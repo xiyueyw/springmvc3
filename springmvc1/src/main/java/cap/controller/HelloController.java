@@ -63,14 +63,26 @@ public class HelloController {
 
     @RequestMapping(value = "/hello", method = RequestMethod.GET)
     public void hello() {
+
     }
 
     @RequestMapping(value = "hello", method = RequestMethod.POST)
-    public ModelAndView hello(Admin admin) {
+    public String hello(@ModelAttribute("admin") Admin admin) {
+        return "result2";
+    }
+     /*
+     @RequestMapping(value = "hello", method = RequestMethod.POST)
+     public String hello(Admin admin,Model model) {
+        model.addAttribute("admin",admin);
+         return "result2";
+     }
+     */
+
+    @RequestMapping(value = "hi/{name}", method = RequestMethod.GET)
+    public ModelAndView sayHi(@PathVariable("name") String name) {
         ModelAndView modelAndView = new ModelAndView();
-        modelAndView.addObject("admin", admin);
-        modelAndView.setViewName("result2");
+        modelAndView.addObject("name", name);
+        modelAndView.setViewName("welcome");
         return modelAndView;
     }
 }
-
