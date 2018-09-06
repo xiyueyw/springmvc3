@@ -5,7 +5,7 @@
   <artifactId>springmvc1</artifactId>
   <packaging>war</packaging>
   <version>0.0.1-SNAPSHOT</version>
-  <name>springmvc3 Maven Webapp</name>
+  <name>springmvc1 Maven Webapp</name>
   <url>http://maven.apache.org</url>
   <dependencies>
     <dependency>
@@ -68,6 +68,6 @@
     
   </dependencies>
   <build>
-    <finalName>springmvc3</finalName>
+    <finalName>springmvc1</finalName>
   </build>
 </project>
