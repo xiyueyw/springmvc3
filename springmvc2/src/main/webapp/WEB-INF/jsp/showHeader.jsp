@@ -14,6 +14,7 @@
 ${hostName}<br>
 ${acceptType}<br>
 ${acceptLang}<br>
+${acceptEnc}<br>
 ${cookie}<br>
 ${userAgent}<br>
 </body>
