@@ -6,11 +6,13 @@
     <file type="web" url="file://$PROJECT_DIR$/springmvc3" />
     <file type="web" url="file://$PROJECT_DIR$/springmvc4" />
     <file type="web" url="file://$PROJECT_DIR$/springmvc5" />
+    <file type="web" url="file://$PROJECT_DIR$/springmvc6" />
   </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/springmvc1/pom.xml" />
+        <option value="$PROJECT_DIR$/springmvc6/pom.xml" />
       </list>
     </option>
   </component>
