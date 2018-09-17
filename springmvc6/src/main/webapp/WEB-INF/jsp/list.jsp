@@ -23,7 +23,6 @@
         <td width="150">Edit</td>
         <td width="150">Delete</td>
         <td width="150">Add</td>
-        <td width="150">Update</td>
 
     </tr>
     <c:forEach items="${pageBean.list}" var="admin">
@@ -31,15 +30,14 @@
             <td><c:out value="${admin.id}"/></td>
             <td><c:out value="${admin.username}"/></td>
             <td><c:out value="${admin.password}"/></td>
-            <td><a href="edit?id=${admin.id}">Edit</a></td>
-            <td><a href="del?id=${admin.id}">Delete</a></td>
-            <td><a href="add?id=${admin.id}">Add</a></td>
-            <td><a href="update?id=${admin.id}">Upadete</a></td>
+            <td><a href="update?id=${admin.id}">Edit</a></td>
+            <td><a href="delete?id=${admin.id}">Delete</a></td>
+            <td><a href="insert?id=${admin.id}">Insert</a></td>
         </tr>
     </c:forEach>
 
     <tr>
-        <td colspan="7">共&nbsp;${pageBean.getTotalPages()}&nbsp;页&nbsp;&nbsp;&nbsp;&nbsp;
+        <td colspan="6">共&nbsp;${pageBean.getTotalPages()}&nbsp;页&nbsp;&nbsp;&nbsp;&nbsp;
             当前第&nbsp;${pageBean.getPageNo()}页&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
                     href="list?pageNo=${pageBean.getTopPageNo()}">首页</a>
             &nbsp;&nbsp;&nbsp;&nbsp;
