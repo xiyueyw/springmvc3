@@ -8,7 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="mybatis1" />
         <module name="springmvc5" />
-        <module name="ssm1" />
+        <module name="ssm2" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -20,6 +20,7 @@
       <module name="springmvc5" target="1.7" />
       <module name="springmvc6" target="1.7" />
       <module name="ssm1" target="1.7" />
+      <module name="ssm2" target="1.7" />
     </bytecodeTargetLevel>
   </component>
 </project>

@@ -35,7 +35,6 @@
          limit #{start},#{pageSize}
  </select>
 
-
     <delete id="deleteAdmin" parameterType="java.lang.Integer">
          delete from admin where id=#{id}
      </delete>
