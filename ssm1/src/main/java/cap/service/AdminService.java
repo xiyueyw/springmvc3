@@ -2,6 +2,7 @@ package cap.service;
 
 
 import cap.model.Admin;
+import cap.util.PageBean;
 
 import java.util.List;
 
@@ -15,5 +16,9 @@ public interface AdminService {
     int updateAdmin(Admin admin);
 
     int deleteAdmin(Integer id);
+
+    PageBean findByPage(int pageNo, int pageSize);
+
+
 
 }
